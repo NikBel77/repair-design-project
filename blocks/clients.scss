@@ -1,0 +1,271 @@
+.clients__wrap {
+    position: relative;
+}
+
+.clients__title {
+    text-align: center;
+    margin-bottom: 8rem;
+
+    @media (max-width: $mobile) {
+        display: none
+    }  
+
+    & h3 {
+        font-size: 2rem;
+        color: $color2;
+        margin-bottom: 1.8rem;
+        font-weight: 500;
+        text-transform: uppercase;
+    }
+
+    & p {
+        font-size: 1.6rem;
+        margin: 2rem 0 0;
+    }
+}
+
+.clients__cards {
+    display: flex;
+    justify-content: space-evenly;
+
+    padding-bottom: 300px;
+
+    @media (max-width: $mobile) {
+        display: none
+    }  
+}
+
+.clients__card {
+    flex-basis: 24%;
+
+    padding: 3rem 2rem 7rem;
+    box-shadow: 0 0 10px $color4;
+
+    position: relative;
+
+    & p {
+        color: $color3;
+        font-size: 1.2rem;
+        line-height: 2.2rem;
+    }
+}
+
+.clients__head {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    margin-bottom: 2rem;
+}
+
+.clients__foto {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+
+    &_client-1 {
+        background: url("assets/images/client-1.png");
+        background-size: cover;
+    }
+
+    &_client-2 {
+        background: url("assets/images/client-2.png");
+        background-size: cover;
+    }
+
+    &_client-3 {
+        background: url("assets/images/client-3.png");
+        background-size: cover;
+    }
+}
+
+.clients__name {
+    margin-left: 1.4rem;
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+.clients__prop {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 80%;
+
+    background-color: $color1;
+    text-transform: uppercase;
+    box-shadow: 0 0 6px $color1Fade;
+
+    padding: 0.8rem 0;
+    position: absolute;
+    left: 0;
+    bottom: -20px;
+
+    & p {
+        color: white;
+        font: 1.4rem "Yeseva One";
+    }
+
+    & p + img {
+        margin-left: 1rem;
+    }
+
+    &::after {
+        content: "";
+        width: 1px;
+        height: 100%;
+        background-color: white;
+        position: absolute;
+        left: 46%;
+        top: 0;
+    }
+    
+}
+
+.clients__form {
+    background-color: $color2;
+    padding: 3.4rem 16rem 3.4rem;
+    width: 60%;
+    margin: 0 auto;
+    box-shadow: 0 0 6px $color4;
+
+    position: absolute;
+    bottom: -200px;
+    left: 20%;
+
+    @media (max-width: $mobile) {
+        width: 100%;
+        position: relative;
+        left: 0;
+        top:0;
+        box-shadow: none;
+        padding: 0 2rem;
+    }  
+}
+
+.clients__form-title {
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    color: white;
+    text-align: center;
+    font-weight: 500;
+}
+
+.clients__form-wrap {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+
+    ::placeholder {
+        color: white;
+        opacity: 1;
+    }
+
+    & div label {
+        width: 100%;
+        display: inline-block;
+        color: $color3;
+    }
+
+    & div input[type=text] {
+        border: none;
+        outline: none;
+        
+        position: relative;
+        width: 100%;
+        margin-top: 0.6rem;
+
+        font-family: "FuturaBookC";
+        font-size: 1.6rem;
+        color: white;
+        background-color: $color2;
+    }
+
+    & div {
+        margin-top: 3.4rem;
+        position: relative;
+
+        &::after {
+            content: "";
+            width: 100%;
+            height: 1px;
+            background-color: $color3;
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+        }
+
+        &:nth-child(1) {
+            flex-basis: 40%;
+
+            @media (max-width: $mobile) {
+                flex-basis: 100%;
+            }  
+        }
+
+        &:nth-child(2) {
+            flex-basis: 40%;
+
+            @media (max-width: $mobile) {
+                flex-basis: 100%;
+            }  
+        }
+
+        &:nth-child(3) {
+            flex-basis: 100%;
+        }
+    }
+}
+
+.clients__check {
+    text-align: center;
+    margin: 5.4rem 0;
+
+    @media (max-width: $mobile) {
+        text-align: left;
+        margin: 3rem 4rem 4rem
+    }  
+
+    & label {
+        font-size: 1.2rem;
+        color: white;
+        position: relative;
+
+        &::before {
+            content: "";
+
+            margin-right: 1rem;
+            width: 20px;
+            height: 20px;
+            background: url(assets/icons/check.svg) no-repeat center, $color1;
+            border-radius: 0.1rem;
+            position: absolute;
+            left: -30px;
+            bottom: -2px;
+        }
+    }
+
+    & input[type=checkbox] {
+        display: none;
+
+        &:checked + label::before {
+            background: #fff;
+            border: 0.5px solid #0004;
+        }
+    }
+}
+
+.clients__btn {
+    text-align: center;
+
+    @media (max-width: $mobile) {
+        
+        padding-bottom: 4rem;
+    } 
+
+    & button {
+        @media (max-width: $mobile) {
+            width: 80%
+        }  
+    }
+}

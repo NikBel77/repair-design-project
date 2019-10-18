@@ -1,0 +1,88 @@
+.repair-types__title {
+    padding: 18rem 0 2em;
+    text-align: center;
+
+    @media (max-width: $mobile) {
+        padding: 8rem 0 2rem
+    }
+
+    & h3 {
+        font-size: 2rem;
+        color: $color2;
+        margin-bottom: 1.8rem;
+        font-weight: 500;
+        text-transform: uppercase;
+    }
+}
+
+.repair-types__cards {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.repair-types__card {
+    flex-basis: 30%;
+    height: 400px;
+    position: relative;
+
+    @media (max-width: $mobile) {
+        flex-basis: 100%;
+        margin-bottom: 20rem;
+    }
+
+    &_first {
+        background: url("assets/images/img-type-1.png") no-repeat;
+    }
+
+    &_second {
+        background: url("assets/images/img-type-2.png") no-repeat;
+    }
+
+    &_third {
+        background: url("assets/images/img-type-3.png") no-repeat;
+    }
+}
+
+.repair-types__list {
+    background-color: white;
+    padding: 3rem 0 5.4rem 3.4rem;
+    width: 80%;
+    box-shadow: 1px 1px 1px $color4;
+
+    position: absolute;
+    bottom: -130px;
+    left: 10%;
+
+    font-size: 1.2rem;
+    color: $color3;
+
+    & h4 {
+        color: $color2;
+        font-size: 1.6rem;
+        padding-bottom: 0.4rem;
+    }
+
+    & ul li {
+        padding-top: 0.8rem;
+    }
+
+    & ul {
+        padding-left: 1rem;
+    }
+}
+
+.repair-types__price {
+    position: absolute;
+    bottom: -18px;
+    left: 0;
+
+    background-color: $color1;
+    color: white;
+    padding: 1.2rem;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    font-family: "Yeseva One";
+    box-shadow: 1px 1px 1px $color4;
+
+}

@@ -1,0 +1,249 @@
+.projects__wrapper {
+    background-color: $color2;
+}
+.projects__nav {
+    padding: 40px 0;
+    text-align: center;
+
+    @media (max-width: $mobile) {
+        display: none;
+    }
+}
+
+.projects__link {
+    color: rgba(255, 255, 255, 0.3);
+    font-family: "Yeseva One";
+    font-size: 1.2rem;
+    text-decoration: none;
+    margin: 0 3rem;
+
+    &:first-child {
+        margin-left: 155px;
+    }
+
+    &_active {
+        color: $color1;
+        position: relative;
+
+        &::before {
+            content: "";
+
+            width: 100%;
+            height: 1px;
+            background-color: $color1;
+
+            position: absolute;
+            bottom: -8px;
+        
+        }
+    }
+}
+
+.projects__wrap {
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: $mobile) {
+        flex-wrap: wrap;
+        position: relative;
+    }
+}
+
+.projects__info {
+    margin-left: 63px;
+    flex-basis: 27%;
+
+    @media (max-width: $mobile) {
+        flex-basis: 100%;
+
+        margin: 0 2rem;
+    }
+}
+
+.projects__title {
+
+    @media (max-width: $mobile) {
+        margin: 4rem 0 0;
+    }
+}
+
+.projects__title h2 {
+    font-size: 2rem;
+    color: $color1;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding-bottom: 1rem;
+
+    position: relative;
+
+    @media (max-width: $mobile) {
+        text-align: center;
+        margin: 0;
+    }
+
+    &:last-child::before {
+        content: "";
+
+        width: 100px;
+        height: 1px;
+        background-color: $color1;
+
+        position: absolute;
+        left: 130px;
+        top: 12px;;
+
+        @media (max-width: $mobile) {
+            display: none;
+        }
+    }
+}
+
+.projects__text {
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    color: white;
+
+    margin: 2.4rem 0 4rem;
+
+    @media (max-width: $mobile) {
+        text-align: center;
+        margin-bottom: 26rem;
+    }
+}
+
+.projects__desc {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    margin-bottom: 4rem;
+
+    @media (max-width: $mobile) {
+
+        margin-bottom: 1rem;
+    }
+
+    & div {
+        flex-basis: 50%;
+        margin-bottom: 3rem;
+    }
+
+    & div h3 {
+        font-size: 1.4rem;
+        color: $color1;
+        font-weight: 500;
+        text-transform: uppercase;
+    }
+
+    & div p {
+        font-size: 1.2rem;
+        line-height: 2rem;
+        color: white;
+        margin-top: 1rem;
+    }
+}
+
+.projects__control {
+
+    @media (max-width: $mobile) {
+        display: none;
+    }
+
+    &-arrow:first-child {
+        transform: rotate(180deg);
+        margin-right: 1rem;
+        cursor: pointer;
+    }
+
+    &-arrow:last-child {
+        margin-left: 1rem;
+        cursor: pointer;
+    }
+
+    &-circle {
+        opacity: 0.3;
+        margin: 0 0.6rem;
+
+        cursor: pointer;
+
+        &_active {
+            opacity: 1;
+        }
+    }
+}
+
+.projects__slider {
+    flex-basis: 73%;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+
+    @media (max-width: $mobile) {
+        position: absolute;
+        bottom: 220px;
+        left: 5%;
+    }
+
+    &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        right: 5%;
+        top: 50%;
+
+        background: url("assets/icons/arrow.svg") no-repeat center, $color1;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        cursor: pointer;
+        @media (max-width: $mobile) {
+            right: 5%;
+            top: 40%;
+            width: 40px;
+            height: 40px;
+        }
+    }
+
+    &::after {
+        @media (max-width: $mobile) {
+            content: "";
+            display: block;
+            position: absolute;
+            left: 5%;
+            top: 40%;
+            width: 40px;
+            height: 40px;
+            background: url("assets/icons/arrow.svg") no-repeat center, $color1;
+            border-radius: 50%;
+            transform: rotate(180deg);
+            cursor: pointer;
+        }
+    }
+}
+.projects__slider-img {
+    
+    &:first-child {
+        background: url("assets/images/slider-1.png") no-repeat;
+        background-size: cover;
+        width: 620px;
+        margin-right: 20px;
+
+        @media (max-width: $mobile) {
+            width: 380px;
+            height: 200px;
+            margin-right: 0;
+        }
+    }
+
+    &:last-child {
+        width: 180px;
+        overflow: hidden;
+        background: url("assets/images/slider-2.png") no-repeat 20%;
+        background-size: cover;
+
+        @media (max-width: $mobile) {
+            display: none;
+        }
+    }
+}
+

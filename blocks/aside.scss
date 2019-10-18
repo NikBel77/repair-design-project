@@ -1,0 +1,41 @@
+.aside {
+    padding: 2.4rem 0;
+    background-color: $color2;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+
+    flex-basis: 6.3rem;
+
+    @media (max-width: $mobile) {
+        display: none;
+    }
+}
+
+.aside__text {
+    font-size: 1.2rem;
+    color: $color1;
+    text-transform: uppercase;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    transform: rotate(90deg);
+
+    position: absolute;
+
+    &::after {
+        content: "";
+
+        display: block;
+        background-color: $color1;
+        width: 54px;
+        height: 1px;
+
+        margin-left: 12px;
+    }
+}

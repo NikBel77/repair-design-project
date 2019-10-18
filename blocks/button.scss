@@ -1,0 +1,25 @@
+.button {
+    background-color: $color1;
+    border: none;
+    border-radius: 0.2rem;
+
+    text-transform: uppercase;
+    font-family: "FuturaDemiC";
+    color: white;
+    outline: none;
+    cursor: pointer;
+    box-shadow: 0 0 6px $color1Fade;
+
+    padding: 1rem 2rem;
+
+    &_fade {
+        background-color: #fff0;
+        border: 1px solid white;
+        color: white;
+        box-shadow: none;
+    }
+
+    &_big {
+        padding: 1.4rem 6rem;
+    }
+} 

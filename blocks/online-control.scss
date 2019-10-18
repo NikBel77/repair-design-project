@@ -1,0 +1,219 @@
+.online-control__title {
+    background: $color2;
+    padding: 4rem 0 18rem;
+    text-align: center;
+
+    @media (max-width: $mobile) {
+        padding: 0;
+    }
+
+    & h3 {
+        font-size: 2rem;
+        color: white;
+        margin-bottom: 1.8rem;
+        font-weight: 500;
+        text-transform: uppercase;
+    }
+}
+
+.online-control__video-place {
+    position: relative;
+    height: 200px;
+
+    @media (max-width: $mobile) {
+        background-color: $color2;
+    }
+
+    & video {
+        @media (max-width: $mobile) {
+            width: 360px;
+        }
+    }
+
+    &:after {
+        content: "";
+        background: url("assets/icons/play.svg") no-repeat 58%, $color1;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        position: absolute;
+        top: -30px;
+        left: 47.5%;
+
+        @media (max-width: $mobile) {
+            top: 95px;
+            left: 45%;
+
+            width: 50px;
+            height: 50px;
+        }
+    }
+}
+
+.online-control__video {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    bottom: 40px;
+
+    @media (max-width: $mobile) {
+        position: relative;
+
+    }
+
+}
+
+.online-control__text {
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 2rem;
+    margin: 2rem 0 8rem;
+
+    @media (max-width: $mobile) {
+
+        margin: 0;
+        padding: 6rem 2rem 4rem;
+        background-color: $color2;
+        color: white;
+    }
+
+    position: relative;
+
+    &::before {
+        content: "";
+        background-color: $color1;
+        width: 80px;
+        height: 1px;
+        position: absolute;
+        top: -20%;
+        left: 46%;
+
+        @media (max-width: $mobile) {
+            top: 16%;
+            left: 41%;
+        }
+    }
+}
+
+.online-control__form {
+    display: flex;
+    justify-content: center;
+    position: relative;
+
+    margin-bottom: 4rem;
+
+    @media (max-width: $mobile) {
+        background-color: $color2;
+        flex-wrap: wrap;
+        margin: 0;
+        padding: 0 2rem 1rem;
+    }
+
+    ::placeholder {
+        color: $color2;
+        opacity: 1;
+        @media (max-width: $mobile) {
+            color: white;
+        }
+    }
+
+    & div label {
+        width: 100%;
+        display: inline-block;
+        opacity: 0.5;
+
+        @media (max-width: $mobile) {
+            color: white;
+        }
+    }
+
+    & div input[type=text] {
+        border: none;
+        outline: none;
+        
+        margin-top: 0.6rem;
+        position: relative;
+
+        font-family: "FuturaBookC";
+        font-size: 1.6rem;
+
+        @media (max-width: $mobile) {
+            background-color: $color2;
+            color: white;
+        }
+    }
+
+    & div {
+        position: relative;
+
+        @media (max-width: $mobile) {
+            flex-basis: 100%;
+            margin: 1rem 0;
+        }
+
+        &::after {
+            content: "";
+            width: 80%;
+            height: 1px;
+            background-color: #0004;
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            @media (max-width: $mobile) {
+                background-color: white;
+                width: 100%
+            }
+        }
+    }
+
+    & button {
+        
+        @media (max-width: $mobile) {
+            position: absolute;
+            bottom: -100px;
+            width: 80%
+        }
+    }
+}
+
+.online-control__check {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media (max-width: $mobile) {
+        background-color: $color2;
+        padding: 1rem 0 6rem;
+    }
+
+    & label {
+        font-size: 1.2rem;
+        position: relative;
+
+        @media (max-width: $mobile) {
+            color: white;
+        }
+
+        &::before {
+            content: "";
+
+            margin-right: 1rem;
+            width: 20px;
+            height: 20px;
+            background: url(assets/icons/check.svg) no-repeat center, $color1;
+            border-radius: 0.1rem;
+            position: absolute;
+            left: -30px;
+            bottom: -2px;
+        }
+    }
+
+    & input[type=checkbox] {
+        display: none;
+
+        &:checked + label::before {
+            background: #fff;
+            border: 0.5px solid #0004;
+        }
+    }
+}

@@ -1,0 +1,117 @@
+.design__wrap {
+    @media (max-width: $mobile) {
+        background-color: $color2;
+    }
+}
+
+.design__title {
+    margin: 12rem 0 0;
+    text-align: center;
+
+    @media (max-width: $mobile) {
+        margin: 0;
+        padding: 16rem 0 0;
+    }    
+
+    & h3 {
+        font-size: 2rem;
+        color: $color2;
+        margin-bottom: 1.8rem;
+        font-weight: 500;
+        text-transform: uppercase;
+
+        @media (max-width: $mobile) {
+            color: white;
+        }
+    }
+
+    & p {
+        font-size: 1.6rem;
+        margin: 2rem 0 0;
+
+        @media (max-width: $mobile) {
+            color: white;
+        }
+    }
+}
+
+.design__cards {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    position: relative;
+    bottom: -120px;
+    margin-top: -80px;
+}
+
+.design__card {
+    flex-basis: 30%;
+    height: 400px;
+    position: relative;
+
+    @media (max-width: $mobile) {
+        flex-basis: 100%;
+        margin: 0 0 20rem;
+    }
+
+    &:last-child {
+        @media (max-width: $mobile) {
+            margin: 0 0 44rem;
+        }
+    }
+
+    &_first {
+        background: url("assets/images/img-type-1.png") no-repeat;
+    }
+
+    &_second {
+        background: url("assets/images/img-type-3.png") no-repeat;
+    }
+
+    &_third {
+        background: url("assets/images/img-type-2.png") no-repeat;
+    }
+}
+
+.design__list {
+    background-color: white;
+    padding: 3rem 0 5.4rem 3.4rem;
+    width: 80%;
+    box-shadow: 1px 1px 1px $color4;
+
+    position: absolute;
+    top: 290px;
+    left: 10%;
+
+    font-size: 1.2rem;
+    color: $color3;
+
+    & h4 {
+        color: $color2;
+        font-size: 1.6rem;
+        padding-bottom: 0.4rem;
+    }
+
+    & ul li {
+        padding-top: 0.8rem;
+    }
+
+    & ul {
+        padding-left: 1rem;
+    }
+}
+
+.design__price {
+    position: absolute;
+    bottom: -18px;
+    left: 0;
+
+    background-color: $color1;
+    color: white;
+    padding: 1.2rem;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    font-family: "Yeseva One";
+    box-shadow: 1px 1px 1px $color4;
+
+}

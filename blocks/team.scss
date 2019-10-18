@@ -1,0 +1,144 @@
+.team__title {
+    background-color: $color2;
+    text-align: center;
+
+    padding-bottom: 300px;
+    
+    @media (max-width: $mobile) {
+        padding: 4rem 0 6rem;
+    }
+
+    & h3 {
+        font-size: 2rem;
+        color: white;
+        margin-bottom: 1.8rem;
+        font-weight: 500;
+        text-transform: uppercase;
+    }
+
+    & p {
+        font-size: 1.6rem;
+        margin: 2rem 0 0;
+        color: white;
+    }
+}
+
+.team__cards {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+    position: relative;
+    top: -220px;
+
+    @media (max-width: $mobile) {
+        background-color: $color2;
+        top: 0;
+        justify-content: center;
+    }
+}
+
+.team__card {
+    flex-basis: 20%;
+    height: 352px;
+    position: relative;
+
+    @media (max-width: $mobile) {
+        flex-basis: 320px;
+        margin: 0 0 12rem;
+        left: 10%;
+    }
+    
+    &_first {
+        background: url("assets/images/dmitri.png") no-repeat;
+    }
+
+    &_second {
+        background: url("assets/images/larisa.png") no-repeat;
+    }
+
+    &_third {
+        background: url("assets/images/alex.png") no-repeat;
+    }
+}
+
+.team__img {
+    padding: 1rem;
+    width: 70px;
+    height: 65px;
+    background-color: $color1;
+    text-align: center;
+    box-shadow: 0 0 15px $color1Fade;
+    border-radius: 1px;
+
+    position: absolute;
+    top: -35px;
+    left: -35px;
+}
+
+.team__person {
+    width: 85%;
+    background-color: white;
+    text-align: center;
+
+    position: absolute;
+    bottom: -60px;
+    left: 6.5%;
+
+    border-radius: 1px;
+    box-shadow: 1px 1px 1px $color4;
+
+    @media (max-width: $mobile) {
+        width: 80%;
+
+        left: 2.5%;
+    }
+}
+
+.team__name {
+
+    & p:first-child {
+        font: 1.5rem "Yeseva One";
+        color: $color2;
+        font-weight: 600;
+        padding: 2.2rem 0 0.8rem;
+    }
+
+    & p:last-child {
+        color: $color3;
+        font-size: 1.3rem;
+        padding-bottom: 2rem;
+    }
+}
+
+.team__exp {
+    background-color: $color1;
+    color: white;
+    font: 1.4rem "Yeseva One";
+    text-transform: uppercase;
+    padding: 1.4rem 0;
+}
+
+.team__text {
+    text-align: center;
+    font-size: 1.8rem;
+    color: $color2;
+    line-height: 3rem;
+    margin-top: -40px;
+    position: relative;
+    padding-bottom: 100px;
+
+    @media (max-width: $mobile) {
+        display: none;
+    }
+
+    &::before {
+        content: "";
+        width: 100px;
+        height: 1px;
+        background-color: $color1;
+        position: absolute;
+        top: -25px;
+        left: 46%;
+    }
+}

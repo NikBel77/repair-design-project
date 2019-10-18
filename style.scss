@@ -1,0 +1,59 @@
+//vars
+$color1: #E3B873;
+$color2: #131313;
+$color3: #959595;
+$color4: rgba(149, 149, 149, 0.4);
+$color1Fade: rgba(227, 184, 115, 0.5);
+
+$laptop: 1024px;
+$tablet: 768px;
+$mobile: 425px;
+
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+    font-family: "FuturaBookC";
+}
+
+h1, h2, h3, h4 {
+    font-family: "Yeseva One";
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.box {
+    margin: 0 6.3rem;
+
+    @media (max-width: $laptop) {
+        margin: 0 2rem;
+    }
+}
+
+
+//imports
+@import "blocks/header.scss";
+@import "blocks/nav.scss";
+@import "blocks/aside.scss";
+@import "blocks/button.scss";
+@import "blocks/projects.scss";
+@import "blocks/online-control.scss";
+@import "blocks/repair-types.scss";
+@import "blocks/measurement.scss";
+@import "blocks/galery.scss";
+@import "blocks/design.scss";
+@import "blocks/work.scss";
+@import "blocks/team.scss";
+@import "blocks/clients.scss";
+@import "blocks/contacts.scss";
+@import "blocks/footer.scss";

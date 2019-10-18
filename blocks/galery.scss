@@ -1,0 +1,168 @@
+.galery__wrapper{
+    background: url("assets/images/background-1.png");
+    background-size: cover;
+
+    @media (max-width: $mobile) {
+        background: white;
+    }    
+}
+
+.galery__inner {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.galery__info {
+    flex-basis: 40%;
+    padding: 12rem 0 10rem;
+
+    @media (max-width: $mobile) {
+        padding: 0 0 14rem;
+        flex-basis: 100%;
+    }  
+}
+
+.galery__title {
+    font-size: 2.2rem;
+    color: $color1;
+    line-height: 4rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 0.1rem;
+
+    @media (max-width: $mobile) {
+        text-align: center;
+    }  
+}
+
+.galery__list {
+    @media (max-width: $mobile) {
+        display: none;
+    }  
+}
+
+.galery__item {
+    list-style-type: none;
+    color: white;
+    font-size: 1.6rem;
+    font-family: "Proxima Nova";
+
+    margin: 3rem 0;
+    cursor: pointer;
+
+    &_active {
+        color: $color1;
+    
+        & span {
+            position: relative;
+
+            &::after {
+                content: "";
+                width: 100%;
+                height: 1px;
+                background-color: $color1;
+        
+                position: absolute;
+                bottom: -6px;
+                left: 0;
+            }
+        }
+    }
+}
+
+.galery__images {
+    flex-basis: 60%;
+    position: relative;
+
+    @media (max-width: $mobile) {
+        flex-basis: 100%;
+        position: absolute;
+
+        bottom: -110px;
+        left: 2%;
+    }
+    
+    &::after {
+        @media (max-width: $mobile) {
+            content: "";
+            display: block;
+            position: absolute;
+            left: 5%;
+            top: 40%;
+            width: 40px;
+            height: 40px;
+            background: url("assets/icons/arrow.svg") no-repeat center, $color1;
+            border-radius: 50%;
+            transform: rotate(180deg);
+            cursor: pointer;
+        }
+    }
+
+    &::before {
+        @media (max-width: $mobile) {
+            content: "";
+            display: block;
+            position: absolute;
+            right: 5%;
+            top: 40%;
+            width: 40px;
+            height: 40px;
+            background: url("assets/icons/arrow.svg") no-repeat center, $color1;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+    }
+}
+
+.galery__image {
+
+    @media (max-width: $mobile) {
+        display: none
+    }  
+
+    &_first {
+        width: 320px;
+        height: 540px;
+        position: absolute;
+        top: -20px;
+        left: 0;
+
+    }
+
+    &_second {
+        width: 320px;
+        height: 250px;
+        position: absolute;
+        top: -70px;
+        right: 0;
+    }
+
+    &_third {
+        width: 320px;
+        height: 320px;
+        position: absolute;
+        bottom: -20px;
+        left: 0;
+    }
+
+    &_fourth {
+        width: 320px;
+        height: 600px;
+        position: absolute;
+        bottom: 50px;
+        right: 0;
+    }
+
+    &_mobile {
+        display: none;
+
+        @media (max-width: $mobile) {
+            display: block;
+            width: 370px;
+            height: 220px;
+
+        }  
+    }
+}

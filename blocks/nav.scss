@@ -1,0 +1,82 @@
+.nav {
+    background-color: $color2;
+}
+
+.nav__panel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 1.2rem 0;
+
+    color: white;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+
+    &_big {
+        padding: 4rem 0;
+    }
+
+}
+
+.nav__text {
+    font-family: "FuturaDemiC";
+    color: $color1;
+}
+
+.nav__menu a {
+    text-decoration: none;
+    color: white;
+
+    padding: 0 2.2rem;
+
+    transition: color 0.2s linear 0s;
+    
+    &:hover {
+        color: $color1;
+    }
+
+    @media (max-width: $mobile) {
+        display: none;
+    }
+}
+
+.nav__contact {
+
+    & button {
+
+        @media (max-width: $mobile) {
+            display: none;
+        }
+    }
+}
+
+.nav__number {
+    color: $color1;
+    font-family: "FuturaDemiC";
+    text-decoration: none;
+
+    margin-right: 2.2rem;
+
+    position: relative;
+
+    @media (max-width: $mobile) {
+        color: white;
+    }
+
+    &:after {
+        content: "";
+
+        width: 100%;
+        height: 1px;
+        background-color: $color1;
+
+        position: absolute;
+        bottom: 0;
+        left: 0;
+
+        @media (max-width: $mobile) {
+            display: none;
+        }
+    }
+}
