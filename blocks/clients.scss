@@ -6,7 +6,7 @@
     text-align: center;
     margin-bottom: 8rem;
 
-    @media (max-width: $mobile) {
+    @media (max-width: $tablet) {
         display: none
     }  
 
@@ -30,7 +30,7 @@
 
     padding-bottom: 300px;
 
-    @media (max-width: $mobile) {
+    @media (max-width: $tablet) {
         display: none
     }  
 }
@@ -132,13 +132,18 @@
     bottom: -200px;
     left: 20%;
 
-    @media (max-width: $mobile) {
-        width: 100%;
+    @media (max-width: $tablet) {
+        width: 80%;
         position: relative;
         left: 0;
         top:0;
         box-shadow: none;
-        padding: 0 2rem;
+        padding: 2rem 2rem 0;
+        margin: 2rem auto;
+    } 
+    @media (max-width: $mobile) {
+        width: 100%;
+        margin: 0;
     }  
 }
 
@@ -198,7 +203,7 @@
         &:nth-child(1) {
             flex-basis: 40%;
 
-            @media (max-width: $mobile) {
+            @media (max-width: $tablet) {
                 flex-basis: 100%;
             }  
         }
@@ -206,7 +211,7 @@
         &:nth-child(2) {
             flex-basis: 40%;
 
-            @media (max-width: $mobile) {
+            @media (max-width: $tablet) {
                 flex-basis: 100%;
             }  
         }
@@ -221,7 +226,7 @@
     text-align: center;
     margin: 5.4rem 0;
 
-    @media (max-width: $mobile) {
+    @media (max-width: $tablet) {
         text-align: left;
         margin: 3rem 4rem 4rem
     }  
@@ -258,13 +263,13 @@
 .clients__btn {
     text-align: center;
 
-    @media (max-width: $mobile) {
+    @media (max-width: $tablet) {
         
         padding-bottom: 4rem;
     } 
 
     & button {
-        @media (max-width: $mobile) {
+        @media (max-width: $tablet) {
             width: 80%
         }  
     }

@@ -16,7 +16,6 @@
     &_big {
         padding: 4rem 0;
     }
-
 }
 
 .nav__text {
@@ -36,7 +35,11 @@
         color: $color1;
     }
 
-    @media (max-width: $mobile) {
+    @media (max-width: $laptop) {
+        padding: 0 0.2rem;
+    }
+
+    @media (max-width: $tablet) {
         display: none;
     }
 }

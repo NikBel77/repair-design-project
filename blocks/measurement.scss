@@ -10,17 +10,27 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
+
+    @media (max-width: $laptop) {
+        justify-content: center;
+    }
+
 }
 
 .measurement__info {
     background: url("assets/icons/grand-circle.svg") no-repeat -156px 52px, url("assets/images/house.png") no-repeat;
     flex-basis: 60%;
     height: 700px;
+
+    @media (max-width: $laptop) {
+        display: none;
+    }
 }
 
 .measurement__element {
     display: flex;
     align-items: center;
+    max-width: 400px;
 
     & p {
         font: 1.4rem "FuturaMediumC";
@@ -56,12 +66,21 @@
 
 .measurement__inner {
     flex-basis:  40%;
+
+    @media (max-width: $laptop) {
+        justify-content: center;
+        min-width: 480px;
+    }
 }
 
 .measurement__form-wrapper{
     background-color: $color2;
     padding: 2.6rem 4rem;
     margin-right: 6.3rem;
+
+    @media (max-width: $laptop) {
+        margin: 0;
+    }
 
     box-shadow: 1px 1px 4px $color4;
 

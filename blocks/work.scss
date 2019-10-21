@@ -1,5 +1,5 @@
 .work {
-    @media (max-width: $mobile) {
+    @media (max-width: $tablet) {
         display: none;
     }
 }
@@ -115,7 +115,16 @@
     }
 }
 
+.work__img {
 
+    & img {
+        width: 700px;
+
+        @media (max-width: $laptop) {
+            width: 500px
+        }
+    }
+}
 
 .work__step {
     flex-basis: 15%;

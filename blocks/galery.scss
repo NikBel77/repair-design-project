@@ -2,7 +2,7 @@
     background: url("assets/images/background-1.png");
     background-size: cover;
 
-    @media (max-width: $mobile) {
+    @media (max-width: $tablet) {
         background: white;
     }    
 }
@@ -18,7 +18,7 @@
     flex-basis: 40%;
     padding: 12rem 0 10rem;
 
-    @media (max-width: $mobile) {
+    @media (max-width: $tablet) {
         padding: 0 0 14rem;
         flex-basis: 100%;
     }  
@@ -32,13 +32,13 @@
     font-weight: 500;
     letter-spacing: 0.1rem;
 
-    @media (max-width: $mobile) {
+    @media (max-width: $tablet) {
         text-align: center;
     }  
 }
 
 .galery__list {
-    @media (max-width: $mobile) {
+    @media (max-width: $tablet) {
         display: none;
     }  
 }
@@ -76,16 +76,20 @@
     flex-basis: 60%;
     position: relative;
 
-    @media (max-width: $mobile) {
+    @media (max-width: $tablet) {
         flex-basis: 100%;
         position: absolute;
 
         bottom: -110px;
+        left: 20%;
+    }
+
+    @media (max-width: $mobile) {
         left: 2%;
     }
     
     &::after {
-        @media (max-width: $mobile) {
+        @media (max-width: $tablet) {
             content: "";
             display: block;
             position: absolute;
@@ -101,7 +105,7 @@
     }
 
     &::before {
-        @media (max-width: $mobile) {
+        @media (max-width: $tablet) {
             content: "";
             display: block;
             position: absolute;
@@ -118,7 +122,7 @@
 
 .galery__image {
 
-    @media (max-width: $mobile) {
+    @media (max-width: $tablet) {
         display: none
     }  
 
@@ -128,7 +132,6 @@
         position: absolute;
         top: -20px;
         left: 0;
-
     }
 
     &_second {
@@ -137,6 +140,10 @@
         position: absolute;
         top: -70px;
         right: 0;
+
+        @media (max-width: $laptop) {
+            display: none
+        }  
     }
 
     &_third {
@@ -145,6 +152,7 @@
         position: absolute;
         bottom: -20px;
         left: 0;
+
     }
 
     &_fourth {
@@ -153,12 +161,16 @@
         position: absolute;
         bottom: 50px;
         right: 0;
+
+        @media (max-width: $laptop) {
+            display: none
+        }  
     }
 
     &_mobile {
         display: none;
 
-        @media (max-width: $mobile) {
+        @media (max-width: $tablet) {
             display: block;
             width: 370px;
             height: 220px;

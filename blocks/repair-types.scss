@@ -2,7 +2,7 @@
     padding: 12rem 0 2em;
     text-align: center;
 
-    @media (max-width: $mobile) {
+    @media (max-width: $tablet) {
         padding: 8rem 0 2rem
     }
 
@@ -19,6 +19,9 @@
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    @media (max-width: $tablet) {
+        align-items: center;
+    }
 }
 
 .repair-types__card {
@@ -26,21 +29,21 @@
     height: 400px;
     position: relative;
 
-    @media (max-width: $mobile) {
+    @media (max-width: $tablet) {
         flex-basis: 100%;
         margin-bottom: 20rem;
     }
 
     &_first {
-        background: url("assets/images/img-type-1.png") no-repeat;
+        background: url("assets/images/img-type-1.png") center no-repeat;
     }
 
     &_second {
-        background: url("assets/images/img-type-2.png") no-repeat;
+        background: url("assets/images/img-type-2.png") center no-repeat;
     }
 
     &_third {
-        background: url("assets/images/img-type-3.png") no-repeat;
+        background: url("assets/images/img-type-3.png") center no-repeat;
     }
 }
 

@@ -4,7 +4,7 @@
 
     padding-bottom: 300px;
     
-    @media (max-width: $mobile) {
+    @media (max-width: $tablet) {
         padding: 4rem 0 6rem;
     }
 
@@ -31,7 +31,7 @@
     position: relative;
     top: -220px;
 
-    @media (max-width: $mobile) {
+    @media (max-width: $tablet) {
         background-color: $color2;
         top: 0;
         justify-content: center;
@@ -43,7 +43,7 @@
     height: 352px;
     position: relative;
 
-    @media (max-width: $mobile) {
+    @media (max-width: $tablet) {
         flex-basis: 320px;
         margin: 0 0 12rem;
         left: 10%;
@@ -92,7 +92,7 @@
     border-radius: 1px;
     box-shadow: 1px 1px 1px $color4;
 
-    @media (max-width: $mobile) {
+    @media (max-width: $tablet) {
         width: 80%;
 
         left: 2.5%;
@@ -132,7 +132,7 @@
     position: relative;
     padding-bottom: 100px;
 
-    @media (max-width: $mobile) {
+    @media (max-width: $tablet) {
         display: none;
     }
 
