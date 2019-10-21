@@ -105,8 +105,13 @@
     font-size: 1.2rem;
     font-family: "Yeseva One";
     text-transform: uppercase;
-
+    cursor: pointer;
     padding: 3rem 0;
+    transition: background-color 0.2s linear, color 0.2s linear;
+    &:hover {
+        background-color: $color1;
+        color: $color2;
+    }
 
     @media (max-width: $mobile) {
         display: none;
@@ -116,5 +121,7 @@
         width: 2.2rem;
         margin-left: 1rem;
         cursor: pointer;
+        background-color: $color2;
+        border-radius: 50%;
     }
 }

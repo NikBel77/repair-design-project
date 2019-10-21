@@ -163,6 +163,9 @@
             width: 370px;
             height: 220px;
 
-        }  
+        } 
+        @media (max-width: $mobileS) {
+            max-width: 300px
+        }
     }
 }

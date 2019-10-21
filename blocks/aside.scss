@@ -17,7 +17,6 @@
 
 .aside__text {
     font-size: 1.2rem;
-    color: $color1;
     text-transform: uppercase;
 
     display: flex;
@@ -27,6 +26,11 @@
     transform: rotate(90deg);
 
     position: absolute;
+
+    & a {
+        color: $color1;
+        text-decoration: none;
+    }
 
     &::after {
         content: "";

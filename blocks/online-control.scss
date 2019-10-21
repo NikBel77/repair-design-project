@@ -24,13 +24,17 @@
         background-color: $color2;
     }
 
-    & video {
+    & iframe {
         @media (max-width: $mobile) {
             width: 360px;
+        }
+        @media (max-width: $mobileS) {
+            max-width: 300px
         }
     }
 
     &:after {
+        display: none;
         content: "";
         background: url("assets/icons/play.svg") no-repeat 58%, $color1;
         width: 60px;

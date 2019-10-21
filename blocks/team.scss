@@ -48,6 +48,10 @@
         margin: 0 0 12rem;
         left: 10%;
     }
+    @media (max-width: $mobileS) {
+        flex-basis: 270px;
+        left: 6%;
+    }
     
     &_first {
         background: url("assets/images/dmitri.png") no-repeat;
