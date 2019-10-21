@@ -27,9 +27,15 @@
     & iframe {
         @media (max-width: $mobile) {
             width: 360px;
+            height: 200px;
+            bottom: -50px;
+            position: relative;
         }
         @media (max-width: $mobileS) {
-            max-width: 300px
+            width: 280px
+        }
+        @media (max-width: $tablet) {
+            max-width: 400px
         }
     }
 

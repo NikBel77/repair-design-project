@@ -77,11 +77,10 @@
     position: relative;
 
     @media (max-width: $tablet) {
-        flex-basis: 100%;
         position: absolute;
 
         bottom: -110px;
-        left: 20%;
+        left: 14%;
     }
 
     @media (max-width: $mobile) {

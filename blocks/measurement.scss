@@ -14,6 +14,9 @@
     @media (max-width: $laptop) {
         justify-content: center;
     }
+    @media (max-width: $tablet) {
+        margin: 4rem 0;
+    }
 
 }
 

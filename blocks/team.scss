@@ -43,10 +43,14 @@
     height: 352px;
     position: relative;
 
+    @media (max-width: $laptop) {
+        flex-basis: 26%;
+    }
     @media (max-width: $tablet) {
-        flex-basis: 320px;
+        flex-basis: 70%;
         margin: 0 0 12rem;
         left: 10%;
+        background-position: left;
     }
     @media (max-width: $mobileS) {
         flex-basis: 270px;
@@ -54,15 +58,24 @@
     }
     
     &_first {
-        background: url("assets/images/dmitri.png") no-repeat;
+        background: url("assets/images/dmitri.png") center no-repeat;
+        @media (max-width: $tablet) {
+            background-position: left;
+        }
     }
 
     &_second {
-        background: url("assets/images/larisa.png") no-repeat;
+        background: url("assets/images/larisa.png") center no-repeat;
+        @media (max-width: $tablet) {
+            background-position: left;
+        }
     }
 
     &_third {
-        background: url("assets/images/alex.png") no-repeat;
+        background: url("assets/images/alex.png") center no-repeat;
+        @media (max-width: $tablet) {
+            background-position: left;
+        }
     }
 }
 
@@ -93,8 +106,7 @@
     box-shadow: 1px 1px 1px $color4;
 
     @media (max-width: $tablet) {
-        width: 80%;
-
+        width: 258px;
         left: 2.5%;
     }
 }

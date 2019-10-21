@@ -515,10 +515,16 @@ h1, h2, h3, h4 {
       background-color: #131313; } }
   @media (max-width: 425px) {
     .online-control__video-place iframe {
-      width: 360px; } }
+      width: 360px;
+      height: 200px;
+      bottom: -50px;
+      position: relative; } }
   @media (max-width: 400px) {
     .online-control__video-place iframe {
-      max-width: 300px; } }
+      width: 280px; } }
+  @media (max-width: 768px) {
+    .online-control__video-place iframe {
+      max-width: 400px; } }
   .online-control__video-place:after {
     display: none;
     content: "";
@@ -733,7 +739,7 @@ h1, h2, h3, h4 {
 
 .repair-types__list {
   background-color: white;
-  padding: 3rem 0 5.4rem 3.4rem;
+  padding: 3rem 1rem 5.4rem 3.4rem;
   width: 80%;
   -webkit-box-shadow: 1px 1px 1px rgba(149, 149, 149, 0.4);
   box-shadow: 1px 1px 1px rgba(149, 149, 149, 0.4);
@@ -742,6 +748,14 @@ h1, h2, h3, h4 {
   left: 10%;
   font-size: 1.2rem;
   color: #959595; }
+  @media (max-width: 768px) {
+    .repair-types__list {
+      width: 44%;
+      left: 20%; } }
+  @media (max-width: 425px) {
+    .repair-types__list {
+      width: 80%;
+      left: 10%; } }
   .repair-types__list h4 {
     color: #131313;
     font-size: 1.6rem;
@@ -784,6 +798,9 @@ h1, h2, h3, h4 {
       -webkit-box-pack: center;
       -ms-flex-pack: center;
       justify-content: center; } }
+  @media (max-width: 768px) {
+    .measurement__wrap {
+      margin: 4rem 0; } }
 
 .measurement__info {
   background: url("assets/icons/grand-circle.svg") no-repeat -156px 52px, url("assets/images/house.png") no-repeat;
@@ -1022,11 +1039,9 @@ h1, h2, h3, h4 {
   position: relative; }
   @media (max-width: 768px) {
     .galery__images {
-      -ms-flex-preferred-size: 100%;
-      flex-basis: 100%;
       position: absolute;
       bottom: -110px;
-      left: 20%; } }
+      left: 14%; } }
   @media (max-width: 425px) {
     .galery__images {
       left: 2%; } }
@@ -1178,6 +1193,14 @@ h1, h2, h3, h4 {
   left: 10%;
   font-size: 1.2rem;
   color: #959595; }
+  @media (max-width: 768px) {
+    .design__list {
+      width: 44%;
+      left: 20%; } }
+  @media (max-width: 425px) {
+    .design__list {
+      width: 80%;
+      left: 10%; } }
   .design__list h4 {
     color: #131313;
     font-size: 1.6rem;
@@ -1367,23 +1390,37 @@ h1, h2, h3, h4 {
   flex-basis: 20%;
   height: 352px;
   position: relative; }
+  @media (max-width: 1120px) {
+    .team__card {
+      -ms-flex-preferred-size: 26%;
+      flex-basis: 26%; } }
   @media (max-width: 768px) {
     .team__card {
-      -ms-flex-preferred-size: 320px;
-      flex-basis: 320px;
+      -ms-flex-preferred-size: 70%;
+      flex-basis: 70%;
       margin: 0 0 12rem;
-      left: 10%; } }
+      left: 10%;
+      background-position: left; } }
   @media (max-width: 400px) {
     .team__card {
       -ms-flex-preferred-size: 270px;
       flex-basis: 270px;
       left: 6%; } }
   .team__card_first {
-    background: url("assets/images/dmitri.png") no-repeat; }
+    background: url("assets/images/dmitri.png") center no-repeat; }
+    @media (max-width: 768px) {
+      .team__card_first {
+        background-position: left; } }
   .team__card_second {
-    background: url("assets/images/larisa.png") no-repeat; }
+    background: url("assets/images/larisa.png") center no-repeat; }
+    @media (max-width: 768px) {
+      .team__card_second {
+        background-position: left; } }
   .team__card_third {
-    background: url("assets/images/alex.png") no-repeat; }
+    background: url("assets/images/alex.png") center no-repeat; }
+    @media (max-width: 768px) {
+      .team__card_third {
+        background-position: left; } }
 
 .team__img {
   padding: 1rem;
@@ -1410,7 +1447,7 @@ h1, h2, h3, h4 {
   box-shadow: 1px 1px 1px rgba(149, 149, 149, 0.4); }
   @media (max-width: 768px) {
     .team__person {
-      width: 80%;
+      width: 258px;
       left: 2.5%; } }
 
 .team__name p:first-child {

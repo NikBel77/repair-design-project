@@ -49,7 +49,7 @@
 
 .repair-types__list {
     background-color: white;
-    padding: 3rem 0 5.4rem 3.4rem;
+    padding: 3rem 1rem 5.4rem 3.4rem;
     width: 80%;
     box-shadow: 1px 1px 1px $color4;
 
@@ -59,6 +59,14 @@
 
     font-size: 1.2rem;
     color: $color3;
+    @media (max-width: $tablet) {
+        width: 44%;
+        left: 20%;
+    }
+    @media (max-width: $mobile) {
+        width: 80%;
+        left: 10%;
+    }
 
     & h4 {
         color: $color2;
